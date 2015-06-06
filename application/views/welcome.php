@@ -2,11 +2,22 @@
 	<head>
 		<title>Welcome-<?=$user['first_name']?></title>
 		<style>
+			html{
+				font-weight:300;
+				font-family: sans-serif;
+			}
 			.container{
 				border:2px solid #222;
 				margin:0 auto;
 				padding: 20px;
 				width: 400px;
+			}
+			button{
+				border:2px solid #222;
+				outline:none;
+				font-size: 11pt;
+				border-radius: 5px;
+				background-color: transparent;
 			}
 			h3{
 				margin:0;
@@ -37,7 +48,7 @@
 			<span id="right">
 				<form action="" method="post">
 					<input type="hidden" name="action" value="logout">
-					<button type="submit">log out</button>
+					<button type="submit">Log out</button>
 				</form>
 			</span>
 		</div>
